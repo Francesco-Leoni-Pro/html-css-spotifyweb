@@ -15,6 +15,10 @@ img {
   background-color: red;
   position: relative;
   z-index: 1;
+   display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
 }
 
 /* WRAPPER (Sidebar + Content) */
@@ -34,6 +38,8 @@ img {
   z-index: 2;
   position: relative;
   overflow-y: auto;
+  display: flex;
+  justify-content: center;    
 }
 
 /* CONTENT */
@@ -41,6 +47,37 @@ img {
   width: 85%;
   background-color: lightgray;
   min-height: calc(100vh - 100px);
+}
+
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Sezioni */
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.section .column {
+    flex: 1;
+    background-color: fuchsia;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
 }
 
 /* FOOTER */
