@@ -13,52 +13,25 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-/* HEADER */
-.header {
-    height: 100px;           
-    min-height: 100px;       
-    max-height: 100px;
-    width: 100%;
-    background-color: rgb(33, 31, 31);
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 20px;
-    font-weight: bold;
-}
-
-/* Bottone upgrade */
-/* Box upgrade */
-.upgrade-box {
-  color: white;
-  padding: 10px 25px;
-  border-radius: 20px;
-  border: 2px solid white;
-}
-
 /* WRAPPER (Sidebar + Content) */
 .wrapper {
   display: flex;
   width: 100%;
   min-height: 100vh;
+  box-sizing: border-box;
 }
 
 /* SIDEBAR */
 .sidebar {
   width: 15%;
   background-color: black;
-  margin-top: -100px;
-  padding: 10px 10px;
+  padding: 10px;
   min-height: 100vh;
-  z-index: 2;
-  position: relative;
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  overflow-y: auto;
 }
 
 .sidebar img {
@@ -78,10 +51,8 @@ body {
 .sidebar-nav ul li img {
     width: 40px;
     height: auto;
-    display: block;
 }
 
-/* Sidebar in basso */
 .sidebar-bottom {
     margin-top: auto;
 }
@@ -94,7 +65,7 @@ body {
     align-items: center;
 }
 
-/* Ultima icona in basso con testo a destra */
+/* Profilo in basso */
 .sidebar-bottom ul li.profile-icon {
     display: flex;
     align-items: center;
@@ -113,35 +84,54 @@ body {
     font-size: 14px;
 }
 
-/* Tutte le altre icone rimangono normali */
+/* Tutte le altre icone */
 .sidebar-bottom ul li:not(.profile-icon) img {
     width: 40px;
     height: auto;
-    background: none;
-    border-radius: 0;
 }
-
 
 /* CONTENT */
 .content {
   width: 85%;
   background-color: rgb(23, 21, 21);
-  min-height: calc(100vh - 100px);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
+/* HEADER */
+.header {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgb(33, 31, 31);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Box upgrade */
+.upgrade-box {
+  color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+
+/* Links container */
 .links-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .links-container a {
     color: gray;
-    text-decoration: none;
     font-weight: bold;
+    text-decoration: none;
 }
 
 /* Sezioni */
@@ -150,12 +140,18 @@ body {
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 20px;
+  justify-content: flex-start;
+  padding: 0 10px;
 }
 
+/* Colonne */
 .section .column {
   flex: 0 0 150px;
-  padding-left: 10px;
-  color: white;
+  min-width: 0;
+}
+
+.section .column:last-child {
+  margin-right: 0;
 }
 
 .section .column img {
@@ -165,6 +161,7 @@ body {
 
 .section .column h3 {
     margin-bottom: 20px;
+    color: white;
 }
 
 .section .column p {
@@ -176,8 +173,7 @@ body {
 }
 
 h2 {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
     margin-bottom: 10px;
     color: white;
 }
@@ -188,8 +184,10 @@ h2 {
     justify-content: space-between;
     align-items: center;
     height: 100px;
+    width: 100%;
     background-color: rgb(59, 59, 59);
     padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .footer-column {
@@ -207,7 +205,6 @@ h2 {
 
 .footer-logo {
     width: 50px;
-    height: auto;
 }
 
 .footer-info {
@@ -232,7 +229,7 @@ h2 {
     color: white;
 }
 
-/* Seconda colonna */
+/* Player */
 .player-column {
     flex-direction: column;
     align-items: center;
@@ -274,7 +271,7 @@ h2 {
     border-radius: 2px;
 }
 
-/* Terza colonna */
+/* Volume */
 .last-column {
     flex-direction: row;
     gap: 10px;

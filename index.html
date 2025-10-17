@@ -10,46 +10,53 @@
   <title>Spotify</title>
 </head>
 <body>
-  <header class="header">
-  <div class="upgrade-box">EFFETTUA L'UPGRADE</div>
-  </header>
 
   <div class="wrapper">
+
+    <!-- SIDEBAR -->
     <aside class="sidebar">
       <img src="./img/logo-small.svg" alt="Spotify Logo" class="logo">
-       <!-- Menu principale -->
-  <nav class="sidebar-nav">
-    <ul class="sidebar-menu">
-      <li><img src="./img/home.svg" alt="Home"><span>Home</span></li>
-      <li><img src="./img/search.svg" alt="Search"><span>Cerca</span></li>
-      <li><img src="./img/libreria.svg" alt="Library"><span>La tua libreria</span></li>
-    </ul>
-  </nav>
 
-  <!-- Menu in basso -->
-  <nav class="sidebar-bottom">
-  <ul>
-    <li><img src="./img/download.svg" alt="Scarica"><span>Installa app</span></li>
-    <li class="profile-icon">
-  <img src="./img/profile.svg" alt="Profilo">
-  <span>John Doe</span>
-    </li>
-  </ul>
-  </nav>
-  </aside>
+      <!-- Menu principale -->
+      <nav class="sidebar-nav">
+        <ul class="sidebar-menu">
+          <li><img src="./img/home.svg" alt="Home"><span>Home</span></li>
+          <li><img src="./img/search.svg" alt="Search"><span>Cerca</span></li>
+          <li><img src="./img/libreria.svg" alt="Library"><span>La tua libreria</span></li>
+        </ul>
+      </nav>
 
+      <!-- Menu in basso -->
+      <nav class="sidebar-bottom">
+        <ul>
+          <li><img src="./img/download.svg" alt="Scarica"><span>Installa app</span></li>
+          <li class="profile-icon">
+            <img src="./img/profile.svg" alt="Profilo">
+            <span>John Doe</span>
+          </li>
+        </ul>
+      </nav>
+    </aside>
 
+    <!-- CONTENT -->
     <main class="content">
+
+      <!-- HEADER dentro content -->
+      <header class="header">
+        <div class="upgrade-box">EFFETTUA L'UPGRADE</div>
+      </header>
+
+      <!-- Links container -->
       <div class="links-container">
-          <a href="#">IN EVIDENZA</a>
-          <a href="#">PODCAST</a>
-          <a href="#">CLASSIFICHE</a>
-          <a href="#">GENERI E MOOD</a>
-          <a href="#">NUOVE USCITE</a>
-          <a href="#">SCOPRI</a>
+        <a href="#">IN EVIDENZA</a>
+        <a href="#">PODCAST</a>
+        <a href="#">CLASSIFICHE</a>
+        <a href="#">GENERI E MOOD</a>
+        <a href="#">NUOVE USCITE</a>
+        <a href="#">SCOPRI</a>
       </div>
 
-      <!-- Titolo Sezione 1 -->
+      <!-- Sezione 1: Recently played -->
       <h2>Recently played</h2>
       <div class="section section-1">
           <div class="column">
@@ -84,7 +91,7 @@
           </div>
       </div>
 
-      <!-- Titolo Sezione 2 -->
+      <!-- Sezione 2: Creato per John Doe -->
       <h2>Creato per John Doe</h2>
       <div class="section section-2">
           <div class="column">
@@ -97,7 +104,7 @@
           </div>
       </div>
 
-      <!-- Titolo Sezione 3 -->
+      <!-- Sezione 3: Artisti più popolari -->
       <h2>Artisti più popolari</h2>
       <div class="section section-3">
           <div class="column">
@@ -109,55 +116,58 @@
             <h3>Ludovico Einaudi</h3>
           </div>
       </div>
+
     </main>
   </div>
 
+  <!-- FOOTER -->
   <footer class="footer">
-  <!-- Colonna 1: immagine + testo + icone -->
-  <div class="footer-column first-column">
-    <img src="./img/sinister.jpeg" alt="Spotify Logo" class="footer-logo">
-    <div class="footer-info">
-      <div class="footer-text">
-        <h4>Sinister</h4>
-        <p>Brano</p>
-        <p>Nome</p>
-      </div>
-      <div class="footer-icons">
-        <span><i class="fa-regular fa-heart"></i></span>
-        <span><i class="fa-regular fa-folder"></i></span>
+    <!-- Colonna 1 -->
+    <div class="footer-column first-column">
+      <img src="./img/sinister.jpeg" alt="Spotify Logo" class="footer-logo">
+      <div class="footer-info">
+        <div class="footer-text">
+          <h4>Sinister</h4>
+          <p>Brano</p>
+          <p>Nome</p>
+        </div>
+        <div class="footer-icons">
+          <span><i class="fa-regular fa-heart"></i></span>
+          <span><i class="fa-regular fa-folder"></i></span>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Colonna 2: player -->
-  <div class="footer-column player-column">
-    <div class="control-icons">
-      <span><i class="fa-sharp fa-solid fa-shuffle"></i></span>
-      <span><i class="fa-solid fa-backward-step"></i></span>
-      <span class="play-button"><i class="fa-solid fa-play"></i></span>
-      <span><i class="fa-solid fa-forward-step"></i></span>
-      <span><i class="fa-solid fa-rotate-right"></i></span>
-    </div>
-    <div class="progress-wrapper">
-      <span class="track-time">0:42</span>
-      <div class="bar">
-        <div class="filled-bar"></div>
+    <!-- Colonna 2 -->
+    <div class="footer-column player-column">
+      <div class="control-icons">
+        <span><i class="fa-sharp fa-solid fa-shuffle"></i></span>
+        <span><i class="fa-solid fa-backward-step"></i></span>
+        <span class="play-button"><i class="fa-solid fa-play"></i></span>
+        <span><i class="fa-solid fa-forward-step"></i></span>
+        <span><i class="fa-solid fa-rotate-right"></i></span>
       </div>
-      <span class="current-time">1:15</span>
+      <div class="progress-wrapper">
+        <span class="track-time">0:42</span>
+        <div class="bar">
+          <div class="filled-bar"></div>
+        </div>
+        <span class="current-time">1:15</span>
+      </div>
     </div>
-  </div>
 
-  <!-- Colonna 3: volume e altri controlli -->
-  <div class="footer-column last-column">
-    <span><i class="fa-solid fa-list-ul"></i></span>
-    <span><i class="fa-solid fa-desktop"></i></span>
-    <div class="volume-controls">
-      <span><i class="fa-solid fa-volume-high"></i></span>
-      <div class="volume-bar">
-        <div class="filled-volume"></div>
+    <!-- Colonna 3 -->
+    <div class="footer-column last-column">
+      <span><i class="fa-solid fa-list-ul"></i></span>
+      <span><i class="fa-solid fa-desktop"></i></span>
+      <div class="volume-controls">
+        <span><i class="fa-solid fa-volume-high"></i></span>
+        <div class="volume-bar">
+          <div class="filled-volume"></div>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
+
 </body>
 </html>
