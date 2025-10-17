@@ -1,3 +1,10 @@
+/* MOBILE */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightcoral;
+    }
+}
+
 /* TABLET */
 @media screen and (min-width: 700px) {
     body {
