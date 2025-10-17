@@ -15,14 +15,18 @@ body {
 
 /* HEADER */
 .header {
-  height: 100px;
-  background-color: rgb(33, 31, 31);
-  position: relative;
-  z-index: 1;
-   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 20px;
+    height: 100px;           
+    min-height: 100px;       
+    max-height: 100px;
+    width: 100%;
+    background-color: rgb(33, 31, 31);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    font-weight: bold;
 }
 
 /* Bottone upgrade */
@@ -54,6 +58,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
+}
+
+.sidebar img {
+    width: 40px;
 }
 
 /* Menu principale */
@@ -85,10 +94,31 @@ body {
     align-items: center;
 }
 
-.sidebar-bottom ul li img {
+/* Ultima icona in basso con testo a destra */
+.sidebar-bottom ul li.profile-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar-bottom ul li.profile-icon img {
+    background-color: darkgray;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.sidebar-bottom ul li.profile-icon span {
+    color: white;
+    font-size: 14px;
+}
+
+/* Tutte le altre icone rimangono normali */
+.sidebar-bottom ul li:not(.profile-icon) img {
     width: 40px;
     height: auto;
-    display: block;
+    background: none;
+    border-radius: 0;
 }
 
 
@@ -108,11 +138,18 @@ body {
     margin-bottom: 20px;
 }
 
+.links-container a {
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 /* Sezioni */
 .section {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 .section .column {
@@ -130,6 +167,14 @@ body {
     margin-bottom: 20px;
 }
 
+.section .column p {
+    color: gray;
+}
+
+.section.section-3 .column img {
+    border-radius: 50%;
+}
+
 h2 {
     padding-left: 10px;
     padding-right: 10px;
@@ -139,6 +184,136 @@ h2 {
 
 /* FOOTER */
 .footer {
-  height: 100px;
-  background-color: violet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(59, 59, 59);
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Prima colonna */
+.footer-column.first-column {
+    flex-direction: row;
+}
+
+.footer-logo {
+    width: 50px;
+    height: auto;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    color: white;
+}
+
+/* Seconda colonna */
+.player-column {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    color: white;
+}
+
+.progress-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.progress-wrapper .track-time,
+.progress-wrapper .current-time {
+    color: white;
+    font-size: 12px;
+}
+
+.progress-wrapper .bar {
+    flex: 1;
+    height: 4px;
+    background-color: lightgray;
+    border-radius: 2px;
+    position: relative;
+}
+
+.progress-wrapper .bar .filled-bar {
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* Terza colonna */
+.last-column {
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.volume-controls {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.volume-bar {
+    width: 80px;
+    height: 4px;
+    background-color: lightgray;
+    border-radius: 2px;
+    position: relative;
+}
+
+.volume-bar .filled-volume {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* ELEMENTI NASCOSTI */
+.sidebar-nav ul li,
+.sidebar-bottom ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-nav ul li span,
+.sidebar-bottom ul li span {
+  display: none;
+  color: white;
 }

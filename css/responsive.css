@@ -1,21 +1,28 @@
 /* MOBILE */
-@media screen and (max-width: 600px) {
-    body {
+@media screen and (min-width: 600px) {
+    /* body {
         background-color: lightcoral;
+    } */
+    .sidebar-nav ul li span,
+    .sidebar-bottom ul li span {
+        display: inline;
+        margin-left: 10px;
+        font-size: 14px;
     }
 }
 
+
 /* TABLET */
 @media screen and (min-width: 700px) {
-    body {
+    /* body {
         background-color: lightblue;
-    }
+    } */
 }
 
 
 /* DESKTOP */
 @media screen and (min-width: 1100px) {
-    body {
+    /* body {
         background-color: lightgreen;
-    }
+    } */
 }
