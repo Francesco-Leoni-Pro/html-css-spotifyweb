@@ -11,7 +11,7 @@
 </head>
 <body>
   <header class="header">
-  <div class="upgrade-box">Effettua l'upgrade</div>
+  <div class="upgrade-box">EFFETTUA L'UPGRADE</div>
   </header>
 
   <div class="wrapper">
@@ -108,7 +108,51 @@
   </div>
 
   <footer class="footer">
-    Footer
-  </footer>
+  <!-- Colonna 1: immagine + testo + icone -->
+  <div class="footer-column first-column">
+    <img src="./img/sinister.jpeg" alt="Spotify Logo" class="footer-logo">
+    <div class="footer-info">
+      <div class="footer-text">
+        <h4>Sinister</h4>
+        <p>Brano</p>
+        <p>Nome</p>
+      </div>
+      <div class="footer-icons">
+        <span><i class="fa-regular fa-heart"></i></span>
+        <span><i class="fa-regular fa-folder"></i></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Colonna 2: player -->
+  <div class="footer-column player-column">
+    <div class="control-icons">
+      <span><i class="fa-sharp fa-solid fa-shuffle"></i></span>
+      <span><i class="fa-solid fa-backward-step"></i></span>
+      <span class="play-button"><i class="fa-solid fa-play"></i></span>
+      <span><i class="fa-solid fa-forward-step"></i></span>
+      <span><i class="fa-solid fa-rotate-right"></i></span>
+    </div>
+    <div class="progress-wrapper">
+      <span class="track-time">0:42</span>
+      <div class="bar">
+        <div class="filled-bar"></div>
+      </div>
+      <span class="current-time">1:15</span>
+    </div>
+  </div>
+
+  <!-- Colonna 3: volume e altri controlli -->
+  <div class="footer-column last-column">
+    <span><i class="fa-solid fa-list-ul"></i></span>
+    <span><i class="fa-solid fa-desktop"></i></span>
+    <div class="volume-controls">
+      <span><i class="fa-solid fa-volume-high"></i></span>
+      <div class="volume-bar">
+        <div class="filled-volume"></div>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
