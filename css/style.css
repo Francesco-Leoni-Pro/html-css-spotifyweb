@@ -95,7 +95,7 @@ body {
 /* CONTENT */
 .content {
   width: 85%;
-  background-color: lightgray;
+  background-color: rgb(23, 21, 21);
   min-height: calc(100vh - 100px);
 }
 
@@ -110,17 +110,23 @@ body {
 
 /* Sezioni */
 .section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .section .column {
-    flex: 1;
-    background-color: fuchsia;
-    padding: 10px;
-    text-align: center;
+  flex: 0 0 150px;
+  padding-left: 10px;
+  color: white;
+}
+
+.section .column img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.section .column h3 {
     margin-bottom: 20px;
 }
 
@@ -128,6 +134,7 @@ h2 {
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 10px;
+    color: white;
 }
 
 /* FOOTER */
