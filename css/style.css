@@ -147,7 +147,7 @@ body {
 }
 
 .section .column {
-  flex: 0 0 150px;
+  width: calc(100% / 2 - 10px + 10px / 2);
 }
 
 .section .column img {
